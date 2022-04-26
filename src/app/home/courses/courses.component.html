@@ -1,0 +1,26 @@
+<mat-toolbar id="tool">
+  We are now conducting training both in OFFLINE & ONLINE modes ...
+</mat-toolbar>
+<div class="content" style="background-color: aqua;">
+  <div fxLayout="row wrap" fxFlexAlign="stretch" fxLayoutGap="16px grid">
+    <div  fxFlex="25%"   fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let val of arr">
+  <mat-card class="mat-elevation-z4" [ngStyle]="{'background-color': getRandomColor()}">
+    <mat-card-header >
+      <mat-card-title id="head">{{val.title}}</mat-card-title>
+ 
+    </mat-card-header>
+    <mat-divider > </mat-divider>
+    <mat-card-content id="con">
+      <p>
+     {{val.content}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions >
+      <span class="price">
+        <i ></i> &#8377; {{val.price}}
+    </span>
+    <a (click)="fullInfo(val)"class="btn btn-outline-success"   id="courses" >FULL COURSE INFO</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>

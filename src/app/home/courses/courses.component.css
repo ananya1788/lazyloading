@@ -1,0 +1,47 @@
+.content {
+    padding: 25px;
+   margin: 10px;
+   
+   
+}
+#head{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:rgb(37, 3, 3)
+    
+}
+#con
+{
+    font-size: 8px; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(32, 4, 32);
+     
+}
+#tool{
+    background-color: tomato;
+    height: fit-content;
+    font-size: small;
+}
+
+.content > mat-card {
+    /* display: flex;
+    flex-direction: row; */
+    width: 50%;
+    height: 50%;
+
+   
+  
+   
+}
+#courses{
+    width: 70px;
+    padding-left:2px;
+    padding-right: 2px;
+    font-size: 7px;
+    float: right;
+    font: bolder;
+   color: rgb(240, 232, 232);
+   background-color: rgb(1, 5, 8);
+
+}
